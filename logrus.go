@@ -61,13 +61,13 @@ func (level Level) MarshalText() ([]byte, error) {
 	case TraceLevel:
 		return []byte("trace"), nil
 	case DebugLevel:
-		return []byte("debug"), nil
+		return []byte("D"), nil
 	case InfoLevel:
-		return []byte("info"), nil
+		return []byte("I"), nil
 	case WarnLevel:
-		return []byte("warning"), nil
+		return []byte("W"), nil
 	case ErrorLevel:
-		return []byte("error"), nil
+		return []byte("E"), nil
 	case FatalLevel:
 		return []byte("fatal"), nil
 	case PanicLevel:
